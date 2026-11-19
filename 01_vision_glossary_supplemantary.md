@@ -1,6 +1,7 @@
-#Glossary
+# Glossary
 
 | Term | Explanation |
+|---|---|
 | Hero | Character controlled by player |
 | Game Object | Anything placed on map; static objects, items, containers, enemies, characters |
 | Static Object | Immovable objects blocking movements; wall, crates |

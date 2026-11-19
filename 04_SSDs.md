@@ -1,5 +1,6 @@
-SSD 9 - Use Case 9
+##SSD 9 - Use Case 9
 
+```mermaid
 sequenceDiagram
   actor P as Player
   participant S as System
@@ -11,9 +12,11 @@ sequenceDiagram
     P->>S: confirm(yes|no)
   end
   S-->>P: updateStats(hp), updateInventory()
+```
 
-SSD 10 - Use Case 10
+##SSD 10 - Use Case 10
 
+```mermaid
 sequenceDiagram
   actor P as Player
   participant S as System
@@ -28,9 +31,11 @@ sequenceDiagram
   else
     S-->>P: showMessage("stored cell")
   end
+```  
 
-SSD 11 - Use Case 11
+##SSD 11 - Use Case 11
 
+```mermaid
 sequenceDiagram
   actor P as Player
   participant S as System
@@ -43,9 +48,11 @@ sequenceDiagram
       S-->>P: removeEnemy(), showDrop(item)
     end
   end
+```
 
-SSD 12 - Use Case 12
+##SSD 12 - Use Case 12
 
+```mermaid
 sequenceDiagram
   actor P as Player
   participant S as System
@@ -56,3 +63,4 @@ sequenceDiagram
     S-->>P: showProjectile(path), updateEnergy(), updateCharge()
     S-->>P: showHit(enemyId, damage) or projectileBlocked()
   end
+```
