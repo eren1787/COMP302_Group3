@@ -1,7 +1,9 @@
 # Use Case 9 - Consume Item 
 
 Primary actor: Player 
+
 Preconditions: There is a consumable item in the inventory or on a adjacent tile.
+
 Postconditions: Stats are changed accordingly, item is gone.
 
 ## Main Flow 
@@ -12,12 +14,15 @@ Postconditions: Stats are changed accordingly, item is gone.
 
 ## Subscenarios
 1a. If consumable item is on the ground, TAKE should be performed first. 
+
 2a. Stat is already full. System may ask "Stat already full. Do you still want to consume?" with a yes/no screen. Based on the decision item is consumed or not.
 
 # Use Case 10 - Equip Item
 
 Primary Actor: Player
+
 Preconditions: There is a item with EQUIP in the inventor or on a adjacent tile.
+
 Postconditions: One weapon or armor is equipped. 
  
 ## Main Flow
@@ -28,13 +33,16 @@ Postconditions: One weapon or armor is equipped.
 
 ## Subscenarios
 1a. If armor/weapon is on the ground, TAKE should be performed first.
+
 1b. If item is on a power cell and equipped item is a ranged weapon, ranged weapon is charged. If charge is full or equipped item is not a ranged weapon
     then player stores the power cell. 
 
 # Use Case 11 - Attack Enemy
 
 Primary Actor: Player
+
 Preconditions: Player equipped a melee weapon, enemy in 3x3 area near player, Energy>0, Attack timer resetted.
+
 Postconditions: Enemy HP reduced or enemy slain.
 
 ## Main Flow
@@ -47,13 +55,17 @@ Postconditions: Enemy HP reduced or enemy slain.
 
 ## Subscenarios
 1a. If no weapon equipped, system notifies with a "no weapon equipped".
+
 1b. If enemy is not adjacent, system notifies with a "too far".
+
 2a. If no energy or waiting for timer, system ignores attack.
 
 # Use Case 12 - Fire a Ranged Weapon
 
 Primary Actor: Player
+
 Preconditions: Player equipped a ranged weapon with charge>0, player has enough energy, attack timer resetted.
+
 Postconditions: Shot refused by system or bullet travels in a line to clicked cell.
 
 ## Main Flow
@@ -67,4 +79,5 @@ Postconditions: Shot refused by system or bullet travels in a line to clicked ce
 
 ## Subscenarios
 2a. Weapon charge is 0, system displays "out of charge".
+
 5a. Enemy hit before shot reached, bullet continues.

@@ -1,4 +1,4 @@
-##SSD 9 - Use Case 9
+## SSD 9 - Use Case 9
 
 ```mermaid
 sequenceDiagram
@@ -14,7 +14,7 @@ sequenceDiagram
   S-->>P: updateStats(hp), updateInventory()
 ```
 
-##SSD 10 - Use Case 10
+## SSD 10 - Use Case 10
 
 ```mermaid
 sequenceDiagram
@@ -33,7 +33,7 @@ sequenceDiagram
   end
 ```  
 
-##SSD 11 - Use Case 11
+## SSD 11 - Use Case 11
 
 ```mermaid
 sequenceDiagram
@@ -50,7 +50,7 @@ sequenceDiagram
   end
 ```
 
-##SSD 12 - Use Case 12
+## SSD 12 - Use Case 12
 
 ```mermaid
 sequenceDiagram
